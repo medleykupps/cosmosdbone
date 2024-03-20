@@ -1,0 +1,40 @@
+# Build Folders (you can keep bin if you'd like, to store dlls and pdbs)
+bin
+obj
+*.dat
+
+# mstest test results
+TestResults
+
+# Azure build & publish files
+csx
+rcf
+
+# Library Dlls added via a linked folder
+# Lib
+packages
+node_modules
+bower_components
+
+Documents/*/*.zip
+**/App_Data/Uploads/BodyPart*
+#**/App_Data/Uploads/readme.md
+**/Kapital.React.Web/logs
+
+_Resharper*
+*.js.map
+*.user
+*.csproj.user
+# *.pubxml
+*.suo
+*.nupkg
+Src/Kapital/v1/Kapital.React.Web/build/
+applicationhost.config
+
+Src/Kapital/.vs/
+
+# IdentityServer4 temporary certificate
+*.jwk
+
+
+docker/volume/
