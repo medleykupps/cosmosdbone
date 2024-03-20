@@ -2,6 +2,9 @@
 bin
 obj
 *.dat
+.vs/CosmosDbOne
+.vs/ProjectEvaluation
+
 
 # mstest test results
 TestResults
