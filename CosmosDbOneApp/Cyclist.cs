@@ -12,5 +12,10 @@ public class Cyclist(Guid id, string name, string country)
     public string Type { get; init; } = "cyclist";
     public string Name { get; set; } = name;
     public string Country { get; set; } = country;
+
+    public override string ToString()
+    {
+        return $"{Name} ({Country}) - {Id}";
+    }
 }
 
