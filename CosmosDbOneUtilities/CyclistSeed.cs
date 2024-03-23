@@ -24,7 +24,7 @@ public class CyclistSeed(ITestOutputHelper output)
 
             return await container.CreateItemAsync(
                 item: cyclist,
-                partitionKey: new PartitionKey(cyclist.Country)
+                partitionKey: new PartitionKey(cyclist.CyclistId)
             );
         }
 

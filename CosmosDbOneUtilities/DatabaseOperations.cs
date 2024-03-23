@@ -33,7 +33,7 @@ public class DatabaseOperations
 
         Container container = await db.CreateContainerIfNotExistsAsync(
             id: CyclistsContainer, 
-            partitionKeyPath: "/country", 
+            partitionKeyPath: "/cyclistId", 
             throughput: 400
         );
     }
