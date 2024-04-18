@@ -269,7 +269,10 @@ public class CyclistSeed(ITestOutputHelper output)
                 EnableScriptLogging = true,
             });
 
-        output.WriteLine(response);
+        if (!string.IsNullOrEmpty(response.ScriptLog))
+        {
+            output.WriteLine(response.ScriptLog);
+        }
     }
 
     [Fact]

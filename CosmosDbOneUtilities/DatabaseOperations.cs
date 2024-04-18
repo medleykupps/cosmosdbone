@@ -91,6 +91,8 @@ public class DatabaseOperations(ITestOutputHelper output)
     {
         var container = database.GetContainer(RacesContainer);
 
+        await container.Scripts.DeleteStoredProcedureAsync("setRaceFoundationYear");
+
         var response = await container.Scripts.CreateStoredProcedureAsync(new StoredProcedureProperties 
         { 
             Id = "setRaceFoundationYear",
@@ -98,9 +100,15 @@ public class DatabaseOperations(ITestOutputHelper output)
                 function setRaceFoundationYear(raceId, foundationYear) {
                     var collection = getContext().getCollection();
 
+                    console.log(`Incoming parameters '${raceId}', '${foundationYear}'`);
+
                     var url = `${collection.getAltLink()}/docs/${raceId}`;
+                    console.log(`Retrieving race at '${url}'`);
+
                     collection.readDocument(url, function(err, race) {
                         if (err) throw err;
+
+                        console.log(`Found race '${race.name}'`);
                         
                         race.foundationYear = foundationYear;
                         
