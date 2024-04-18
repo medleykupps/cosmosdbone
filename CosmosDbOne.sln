@@ -3,9 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.8.34525.116
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CosmosDbOneApp", "CosmosDbOneApp\CosmosDbOneApp.csproj", "{6AE81E43-AA76-4C86-AEAE-2697B032091F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CosmosDbOneApp", "CosmosDbOneApp\CosmosDbOneApp.csproj", "{6AE81E43-AA76-4C86-AEAE-2697B032091F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CosmosDbOneUtilities", "CosmosDbOneUtilities\CosmosDbOneUtilities.csproj", "{F07DEF08-9D71-49EA-8E45-3AEF321FBA69}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CosmosDbOneUtilities", "CosmosDbOneUtilities\CosmosDbOneUtilities.csproj", "{F07DEF08-9D71-49EA-8E45-3AEF321FBA69}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CosmosDbOne.FunctionsApp", "CosmosDbOne.FunctionsApp\CosmosDbOne.FunctionsApp.csproj", "{CEEA1B49-39BF-44AF-9B4B-0E128ABDB036}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CosmosDbOne.Core", "CosmosDbOne.Core\CosmosDbOne.Core.csproj", "{7E1D8A68-BD92-467E-9F30-6983230DCDA6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +25,14 @@ Global
 		{F07DEF08-9D71-49EA-8E45-3AEF321FBA69}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F07DEF08-9D71-49EA-8E45-3AEF321FBA69}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F07DEF08-9D71-49EA-8E45-3AEF321FBA69}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CEEA1B49-39BF-44AF-9B4B-0E128ABDB036}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CEEA1B49-39BF-44AF-9B4B-0E128ABDB036}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CEEA1B49-39BF-44AF-9B4B-0E128ABDB036}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CEEA1B49-39BF-44AF-9B4B-0E128ABDB036}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7E1D8A68-BD92-467E-9F30-6983230DCDA6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7E1D8A68-BD92-467E-9F30-6983230DCDA6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7E1D8A68-BD92-467E-9F30-6983230DCDA6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7E1D8A68-BD92-467E-9F30-6983230DCDA6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

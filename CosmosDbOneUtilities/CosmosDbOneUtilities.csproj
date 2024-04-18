@@ -18,6 +18,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\CosmosDbOne.Core\CosmosDbOne.Core.csproj" />
     <ProjectReference Include="..\CosmosDbOneApp\CosmosDbOneApp.csproj" />
   </ItemGroup>
 

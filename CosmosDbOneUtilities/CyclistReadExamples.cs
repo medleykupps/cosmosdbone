@@ -1,4 +1,5 @@
-﻿using CosmosDbOneApp;
+﻿using CosmosDbOne.Core.Cyclists;
+using CosmosDbOneApp;
 using Microsoft.Azure.Cosmos;
 using System.Text.Json;
 using Xunit;
