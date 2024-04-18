@@ -263,7 +263,7 @@ public class CyclistSeed(ITestOutputHelper output)
         var response = await container.Scripts.ExecuteStoredProcedureAsync<string>(
             "setRaceFoundationYear", 
             new PartitionKey("cf8605f8-0797-46b4-b202-872693b3a626"), 
-            new dynamic[] { "cf8605f8-0797-46b4-b202-872693b3a626", 1890 },
+            new dynamic[] { "cf8605f8-0797-46b4-b202-872693b3a626", 1920 },
             new StoredProcedureRequestOptions
             {
                 EnableScriptLogging = true,
